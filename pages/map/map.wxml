@@ -1,0 +1,26 @@
+<!--pages/map/map.wxml-->
+<text class="title">Hello world!</text>
+<button size="mini" bindtap="HandleBtnClick">按钮</button>
+<!-- 1.小程序的数据绑定：{{}} ->Mustache -->
+<view>Hello {{name}} </view>
+<view>年龄:{{age}} </view>
+<view bindtap="handleViewClick">哈哈哈</view>
+
+<!-- 2.列表展示：wx:for ->遍历数组,内部生成item -->
+<view wx:for = '{{students}}'>{{item.id}}-{{item.name}}-{{item.age}} </view>
+
+<!-- 3.事件监听改变data ->绑定事件，执行函数 -->
+<view>当前计数:{{counter}} </view>
+<button size="mini" bindtap="HandleBtnAdd">+</button>
+<button size="mini" bindtap="HandleBtnSub">-</button>
+
+<!-- 2.获取用户信息，利用按钮属性 -->
+<button size="mini"
+  open-type="getUserInfo"
+  bindgetuserinfo="handleUserInfo">
+  获取授权
+</button>
+
+<!-- 3.展示用户信息，使用组件 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>

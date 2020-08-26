@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/datashow/datashow",
+    "pages/relation/relation",
+    "pages/search/search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "数据可视化",
+    "backgroundColor": "black",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "疫情地图",
+        "iconPath": "assets/tabbar/map.png",
+        "selectedIconPath": "assets/tabbar/map_active.png"
+      },
+      {
+        "pagePath": "pages/datashow/datashow",
+        "text": "数据分析",
+        "iconPath": "assets/tabbar/data.png",
+        "selectedIconPath": "assets/tabbar/data_active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "患者查询",
+        "iconPath": "assets/tabbar/search.png",
+        "selectedIconPath": "assets/tabbar/search_active.png"
+      },
+      {
+        "pagePath": "pages/relation/relation",
+        "text": "患者关系",
+        "iconPath": "assets/tabbar/relation.png",
+        "selectedIconPath": "assets/tabbar/relation_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap33.json"
+}
